@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Desenhando o personagem Kirby</title>
+	<style>
+		canvas {
+			border: 1px solid black;
+		}
+	</style>
+</head>
+<body>
+	<canvas id="myCanvas" width="300" height="300"></canvas>
+
+	<script>
+		var canvas = document.getElementById("myCanvas");
+		var ctx = canvas.getContext("2d");
+
+		ctx.beginPath();
+		ctx.arc(150, 150, 100, 0, Math.PI * 2);
+		ctx.fillStyle = "pink";
+		ctx.fill();
+		ctx.stroke();
+
+		ctx.beginPath();
+		ctx.arc(100, 100, 30, 0, Math.PI * 2);
+		ctx.fillStyle = "white";
+		ctx.fill();
+		ctx.stroke();
+        ctx.beginPath();
+		ctx.arc(100, 100, 3, 0, Math.PI * 2);
+		ctx.fillStyle = "Black";
+		ctx.fill();
+		ctx.stroke();
+
+		ctx.beginPath();
+		ctx.arc(200, 100, 30, 0, Math.PI * 2);
+		ctx.fillStyle = "white";
+		ctx.fill();
+		ctx.stroke();
+        ctx.beginPath();
+		ctx.arc(200, 100, 3, 0, Math.PI * 2);
+		ctx.fillStyle = "Black";
+		ctx.fill();
+		ctx.stroke();
+
+
+		ctx.beginPath();
+		ctx.arc(150, 150, 60, Math.PI * 0.25, Math.PI * 0.75);
+		ctx.lineWidth = 20;
+		ctx.strokeStyle = "black";
+		ctx.stroke();
+        ctx.beginPath();
+		ctx.arc(150, 70, 60, 3, 6);
+		ctx.lineWidth = 50   ;
+		ctx.strokeStyle = "yellow";
+		ctx.stroke();
+	</script>
+</body>
+</html>
